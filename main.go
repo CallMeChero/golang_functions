@@ -9,7 +9,11 @@ func main() {
 
 	sum := variadicFn(1, 15, 20, 50, 10)
 
+	numbers := []int{15, 20, 50, 10}
+	anotherSum := variadicFn(1, numbers...)
+
 	fmt.Println(sum)
+	fmt.Println(anotherSum)
 }
 
 func factorial(number int) int {
